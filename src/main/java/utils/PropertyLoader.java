@@ -15,6 +15,16 @@ public class PropertyLoader {
         return prop.getProperty(key);
     }
 
+    public static String loadPropertyBrowser(final String key) {
+        Properties prop = getAllPropFromFile("project.selectBrowser");
+        return prop.getProperty(key);
+    }
+
+    public static String loadPropertyBrowser(final String key, String path) {
+        Properties prop = getAllPropFromFile(path);
+        return prop.getProperty(key);
+    }
+
 
     public static Properties getAllPropFromFile(final String path) {
 

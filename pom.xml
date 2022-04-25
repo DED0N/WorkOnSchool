@@ -23,6 +23,10 @@
 
         <stand.key>stand2</stand.key>
 
+        <stand.browserVersion>browserFFVersion</stand.browserVersion>
+
+        <stand.browserName>browserFFName</stand.browserName>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -142,6 +146,16 @@
                         <property>
                             <name>standKey</name>
                             <value>${stand.key}</value>
+                        </property>
+
+                        <property>
+                            <name>selectBrowser</name>
+                            <value>${stand.browserVersion}</value>
+                        </property>
+
+                        <property>
+                            <name>selectBrowserName</name>
+                            <value>${stand.browserName}</value>
                         </property>
 
                     </systemProperties>
